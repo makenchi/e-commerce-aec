@@ -13,8 +13,8 @@ const TopNavbar = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
-                    <NavLink href="#home" className='nav-link'>Home</NavLink>
-                    <Nav.Link href="products">Products</Nav.Link>
+                    <NavLink href="/" className='nav-link'>Home</NavLink>
+                    <Nav.Link href="/products">Products</Nav.Link>
                     <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">
@@ -26,7 +26,7 @@ const TopNavbar = () => {
                         Separated link
                     </NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link href="#link">Contact</Nav.Link>
+                    <Nav.Link href="/cont+act">Contact</Nav.Link>
                 </Nav>
                 </Navbar.Collapse>
             </Container>

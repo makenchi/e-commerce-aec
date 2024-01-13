@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css"
 import Home from './Pages/Home';
+import Products from './Pages/Products';
+import Contact from './Pages/Contact';
 import { Fragment } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
