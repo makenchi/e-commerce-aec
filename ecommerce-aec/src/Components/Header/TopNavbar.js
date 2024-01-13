@@ -3,17 +3,18 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import {Link, NavLink } from "react-router-dom";
 
 const TopNavbar = () => { 
     return (
         <Navbar expand="lg" bg="dark" data-bs-theme="dark">
             <Container>
-                <Navbar.Brand href="#home">AeC ecommerce</Navbar.Brand>
+                <Navbar.Brand href="/">AeC ecommerce</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#link">Products</Nav.Link>
+                    <NavLink href="#home" className='nav-link'>Home</NavLink>
+                    <Nav.Link href="products">Products</Nav.Link>
                     <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                     <NavDropdown.Item href="#action/3.2">
@@ -33,4 +34,4 @@ const TopNavbar = () => {
     );  
 }
 
-export default TopNavbar
+export default TopNavbar;
