@@ -4,7 +4,7 @@ import React, { Fragment } from 'react'
 const HeaderSlider = () => {
   return (
     <Fragment>
-        <Carousel variant='dark' style={{maxHeight: "650px"}}>
+        <Carousel variant='dark'>
             <CarouselItem>
                 <img className='d-block w-100'
                     style={{height: "100vh", objectFit: "cover"}}
